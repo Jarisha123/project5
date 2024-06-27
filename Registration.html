@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>UI Pages</title>
+<style>
+	
+        nav ul li {
+        /* CSS for styling the navigation menu */
+        nav {
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            display: inline;
+            margin-right: 50px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+		.video-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-1;
+}
+#bg-video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.video-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+.div {
+    background: rgba(255, 255, 255, 0.25); /* Black background with opacity */
+   /* White text color */
+ /* No border */
+  padding: 120px;
+  padding-top: 0%;
+  width:30%;
+  height:80%;
+  margin-top: 30;
+  text-align: center;
+  border-color:black;
+
+}
+		
+    
+</style>
+</head>
+<style>
+
+
+
+body{
+	background:url(image1.jpg);
+	backface-visibility: hidden;
+	background-repeat: no-repeat;
+	background-size:cover;
+	color:yellow;
+	font-size: large;
+	font-style: initial;
+	}
+	body{
+		 text-shadow: 5px 5px 10px red;
+		 color:yellow;
+		}
+</style>
+<body>
+	<div class="video-background">
+	
+	
+	<video autoplay muted loop id="bg-Video">
+	  <source src="video.mp4" type="video/mp4">
+	</video>
+	<div class="video-overlay"></div>
+	</div>
+	<audio autoplay muted loop id="bg-Video">
+		<source src="snapping.mp3" type="audio/mpeg">
+	</audio>
+	<nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Registration.html">HOME</a></li>
+            <li><a href="http://127.0.0.1:5500/services.html">SERVICES</a>
+            
+            <li><a href="http://127.0.0.1:5500/portfolio.html">PORTFOLIO</a>
+            <li><a href="http://127.0.0.1:5500/contact.html">CONTACT</a></li>
+			<li><a href="http://127.0.0.1:5500/logout.html">LOG OUT</a></li>
+        </ul>
+    </nav>
+
+
+
+
+	</style>
+	<style>
+		h1{
+		 text-shadow: 5px 5px 10px blue;
+		 color:rgb(0,255,255);
+		}
+		
+		
+   </style>
+<body><center>
+	<div class="div" height : 100%; >
+	<h1>Travel Registration Form</h1>
+		
+   
+</body>
+
+
+	<body>
+		<script>
+			function validation()
+			 {
+			if (isEmpty(document.getElementById('data_2').value.trim())) {
+			alert('First name is required!');
+			return false;
+			}
+	
+			if (isEmpty(document.getElementById('data_3').value.trim())) {
+			alert('Last name is required!');
+			return false;
+			}
+	
+			if (isEmpty(document.getElementById('data_4').value.trim())) {
+			alert('Phone number is required!');
+			return false;
+			}
+	
+			if (isEmpty(document.getElementById('data_5').value.trim())) {
+			alert('Email is required!');
+			return false;
+			}
+	
+			if (!validateEmail(document.getElementById('data_5').value.trim())) {
+			alert('Email must be a valid email address!');
+			return false;
+			}
+	
+			if (isEmpty(document.getElementById('data_6').value.trim())) {
+			alert('preference destination is required!');
+			return false;
+			}
+	
+			if (isEmpty(document.getElementById('data_7').value.trim())) {
+			alert('preffered  travel date from is required!');
+			return false;
+			}
+	
+			
+			if (isEmpty(document.getElementById('data_8').value.trim())) {
+			alert('preffered  travel date to is required!');
+			return false;
+			}
+			if (isEmpty(document.getElementById('data_9').value.trim())) {
+			alert('date of birth is required!');
+			return false;
+			}
+			if (isEmpty(document.getElementById('data_10').value.trim())) {
+			alert('gender is required!');
+			return false;
+			}
+			
+			
+			
+			 
+			function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+			function validateEmail(email) {
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+			return isEmpty(email) || re.test(email);
+			}
+		}
+		
+			</script>
+	</body>
+	
+	<body>
+	
+	
+	<form  method="get" action="card.html" onSubmit="return validation();">
+	<span style="max-width: 400px;">
+	</span>
+	
+	
+	
+	<span style="padding-bottom: 18px;">first name</span><span style="color: red;"> *</span><br>
+	<input type="text" id="data_2" placeholder="first name" name="data_3" style="max-width: 100%;" class="form-control"/><br>
+	
+	
+	
+	
+	<span style="padding-bottom: 18px;">last name</span><span style="color: red;"> *</span><br>
+	<input type="text" id="data_3"  placeholder="last name" name="data_3" style="max-width : 450px;" class="form-control"/><br>
+	
+	<span style="padding-bottom: 20px;">Date of Birth</span><span style="color: red;"> *</span><br>
+		<input type="date" id="data_9"   name="data_4" style="max-width : 450px;" class="form-control"/><br>
+		
+
+	<span style="padding-bottom: 18px;">Email address</span><span style="color: red;"> *</span><br>
+	<input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"/><br>
+	
+	<span style="padding-bottom: 18px;"> address</span><span style="color: red;"> *</span><br>
+		<input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"/><br>
+		
+	<span style="padding-bottom: 18px;">Phone Number</span><span style="color: red;"> *</span><br>
+		<input type="text" id="data_4"  placeholder="1234567890" name="data_4" style="max-width : 450px;" class="form-control"/><br>
+		
+		<span style="padding-bottom: 30px;">age</span><br>
+		<select name="age">
+			<option value="20-30">20-30</option>
+			<option value="31-40">31-40</option>
+			<option value="41-50">41-50</option>
+			<option value="51-60">51-60</option>
+		</select><br>
+		<span style="color: yellow;"> gender</span>
+		<span style="color: red;"> *</span><br>
+
+			<input type="radio" id="data_10"   name="data_4" style="max-width : 450px;" class="form-control"/>male<br>
+			<input type="radio" id="data_10"   name="data_4" style="max-width : 450px;" class="form-control"/>female<br>
+			
+			
+			<span style="padding-bottom: 20px;">preffered travel destination<span style="color: red;"> *</span><br/>
+				<input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/><br>
+				
+			
+				
+	<span style="padding-bottom: 20px; margin:5px;">preffered travel date from</span><span style="color: red;"> *</span><br>
+		<input type="date" id="data_6" name="data_7" style="max-width : 250px;" class="form-control"/><br>
+		
+		<span style="padding-bottom: 20px;">preffered travel date to</span><span style="color: red;"> *</span><br>
+			<input type="date" id="data_6" name="data_8" style="max-width : 250px;" class="form-control"/><br>
+			
+			Country:<br>
+<select name="address">
+	<option value="Australia">Australia</option>
+	<option value="newyork">Bangladesh</option>
+	<option value="China">China</option>
+	<option value="India">India</option>
+	<option value="France">France</option>
+	<option value="Japan">Japan</option><br>
+</select>
+	<div style="padding-bottom: 30px; margin:20px;"><input name="skip_Submit" value="register" type="submit"/></div>
+	</form>
+	</body>
+	
+	

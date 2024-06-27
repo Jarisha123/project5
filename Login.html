@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>UI Pages</title>
+<style>
+body{
+background:url(image1.jpg);
+
+background-size:cover;
+color:black;
+}
+</style>
+<style>
+	/*  Smart phone      */
+	
+	@media screen and (min-width:220px )  {
+
+		   body {
+				background-color: aqua;
+		   }
+	}
+	  /*  Tablet,ipad      */    
+	
+	  @media Screen and (min-width:148px) and (max-width:1324px){
+		  body {
+				background: url(image1.jpg);
+		  background-attachment: fixed;
+		   background-size: 100% 100%;
+			color:black;
+		  }
+	  }
+ 
+	/* Desktops and Laptops asfsdf     */    
+	
+	@media Screen and (min-width:138px) and (max-width:950px){
+		  body {
+				background: url(image2.jpg);
+				background-attachment: fixed;
+				background-size: 100% 100%;
+				 color:yellow;
+
+		  }
+	  }
+
+	  /* Large Screens---------  */
+	  @media Screen and (min-width:129px) and (max-width:550px){
+		  body {
+				background: url(image3.jpg);
+				background-attachment: fixed;
+		   background-size: 100% 100%;
+			color:white;
+
+		   }
+		  }
+	   @media Screen and (min-width:118px) and (max-width:320px){
+		  body {
+				background: url(image1.jpg);
+		  background-attachment: fixed;
+		   background-size: 100% 100%;
+		   color:red;
+
+		  }
+
+	  }
+
+</style>
+<style>
+	
+	nav ul li {
+	/* CSS for styling the navigation menu */
+	nav {
+		background-color: black;
+		color: white;
+		padding: 10px;
+	}
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		display: inline;
+		margin-right: 50px;
+	}
+	nav ul li a {
+		color: black;
+		text-decoration: none;
+	}
+	nav ul li a:hover {
+		text-decoration: underline;
+	}
+	</style>
+
+</head>
+
+
+<script>
+         // User Validations
+ function loginValidation() {
+             // Ramesh
+   var uname = document.myform.username.value;
+              //Ramesh@123
+   var password = document.myform.password.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } else if (password.length<6){
+               alert("Password Must be 6 letters")
+               return false;
+            }  
+            return true                 
+         }           
+      </script>
+	  <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Registration.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="http://127.0.0.1:5500/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+      <body><center>
+          <h2>Login Page</h2>  
+<form name="myform" action="LoginSuccess.html" 	onsubmit="return loginValidation(this)">
+ 
+User Name : <input type="text" name="username"> <br>
+Password :  <input type="password" name="password"> <br>
+         <input type="submit" value="Submit">     
+          
+        </form>
+   </body>
+
+
+
+
+</form>
+</body>
+</html>

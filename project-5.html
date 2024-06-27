@@ -1,0 +1,202 @@
+<html>
+<head>
+<title>UI Pages</title>
+
+<style>
+
+	
+	nav ul li {
+	/* CSS for styling the navigation menu */
+	nav {
+		background-color:yellow;
+		color: yellow;
+		
+	}
+	nav ul {
+		list-style-type: bold;
+		margin: 0;
+		padding: 0;
+	}
+
+		display: inline;
+		margin-right: 50px;
+	}
+	nav ul li a {
+		color: black;
+		text-decoration:none ;
+        min-width: 10%;
+        
+        
+	}
+	nav ul li a:hover {
+		text-decoration: underline;
+	}
+	/*video background*/
+.video-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-1;
+}
+#bg-video{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+.video-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+.div {
+    background: rgba(255, 255, 255, 0.5); /* Black background with opacity */
+   /* White text color */
+ /* No border */
+  padding: 120px;
+  padding-top: 3%;
+  width:10%;
+  height:30%;
+  
+  margin-top: 5%;
+
+}
+
+
+
+
+</style>
+</head>
+
+<style>
+
+
+
+body{
+background:url(image1.jpg);
+backface-visibility: hidden;
+background-repeat: no-repeat;
+background-size:cover;
+color:yellow;
+font-size: large;
+font-style: initial;
+}
+body{
+	 text-shadow: 5px 5px 10px red;
+	 color:yellow;
+	}
+</style>
+<body>
+	
+	<div class="video-background">
+	
+	
+	<video autoplay muted loop id="bg-Video">
+	  <source src="video.mp4" type="video/mp4">
+	</video>
+	<div class="video-overlay"></div>
+	</div>
+	<audio autoplay  loop id="bg-Video">
+		<source src="snapping.mp3" type="audio/mpeg">
+	</audio>
+</body>
+<script>
+    // User Validations
+function loginValidation() {
+        // Ramesh
+var uname = document.myform.username.value;
+         //Ramesh@123
+var password = document.myform.password.value;
+        if(uname==null || uname=="") {
+          alert("Name cant be blank")
+          return false;  
+       } else if (password.length<6){
+          alert("Password Must be 6 letters")
+          return false;
+       }  
+       return true                 
+    }           
+ </script>
+<nav>
+	<ul>
+		<li><a href="http://127.0.0.1:5500/Registration.html">HOME</a></li>
+		<li><a href="http://127.0.0.1:5500/services.html">SERVICES </a></li>
+	
+		<li><a href="http://127.0.0.1:5500/portfolio.html">PORTFOLIO</a></li>
+		<li><a href="http://127.0.0.1:5500/contact.html">CONTACT</a></li>
+		<li><a href="http://127.0.0.1:5500/logout.html">LOG OUT</a></li>
+	</ul>
+</nav>
+
+
+</style>
+
+<style>
+	.blink {
+		animation: blinker 5s linear infinite;
+		text-shadow:black;
+		color:wheat;
+		margin-top: 2%;
+		font-family: sans-serif;
+	}
+
+	@keyframes blinker {
+		50% {
+			opacity: 0;
+		}
+	}
+</style>
+</head>
+
+<body>
+<marquee class="blink">🛩️🛩️TRAVELERS  ARE DREAMERS WHO MAKE THEIR DESIRES FOR ADVENTURE A REALITY🛩️🛩️</marquee>
+</body>
+
+
+<style>
+	h1{
+	 text-shadow:  red;
+	 color:black(0,255,255);
+	}
+	
+	
+</style>
+
+	
+
+
+
+
+
+<body><center>
+	<div class="div" height : 100%; >
+	<h3> LOGIN PAGE</h3>
+	<script>  
+	function validateemail()  
+	{  
+	var myemail=document.myform.email.value;  
+	var atposition=myemail.indexOf("@");  
+	var dotposition=myemail.lastIndexOf(".");  
+	if (atposition<1 || dotposition<atposition+2 || dotposition+2>=myemail.length){  
+	  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+	  return false;  
+	  }  
+	}  
+	</script>  
+	<body>  
+	<form name="myform"  method="post" action="registration.html" onsubmit="return validateemail();">  
+	EMAIL:<br> <input type="text" name="email"><br>  
+	  
+	 
+	
+PASSWORD :<br>  <input type="password" name="password"> <br>
+<div style=" margin:20px;  "><input name="skip_Submit" value="Login" type="submit"/></div>
+</form>
+
+</body>
+
+</html>
